@@ -32,3 +32,8 @@ body{
     --fs-body: 1.125rem;
     }
 }
+
+.about-us{
+    max-width: 1000px;
+    margin: 0 auto;
+}
