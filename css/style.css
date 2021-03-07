@@ -33,7 +33,8 @@ body{
     }
 }
 
-.about-us{
-    max-width: 1000px;
-    margin: 0 auto;
+@media {
+    .about-us {
+        grid-template-columns: auto;
+    }
 }
