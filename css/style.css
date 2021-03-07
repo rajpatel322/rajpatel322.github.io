@@ -31,6 +31,6 @@
 
 /* General Styles */
 body{
-    background: lightgray;
-    color: var(--clr-dark);
+    background: var(--clr-dark);
+    color: var(--clr-light);
 }
