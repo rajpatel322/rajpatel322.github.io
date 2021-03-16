@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>To Do List</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-            body{
-                background-color: aqua;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            {% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To Do List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: 'Manrope', sans-serif;
+            padding-top: 50px;
+        }
+
+        footer {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            padding: 3px;
+            color: white;
+        }
 
 
-            {% endblock content %}
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background-color: white;
 
-        </div>
-    </body>
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% block content %}
+
+
+        {% endblock content %}
+
+    </div>
+</body>
+<footer>&copy; Copyright 2021 TRIKSNAS.COM</footer>
+
 </html>
