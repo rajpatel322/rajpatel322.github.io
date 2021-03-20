@@ -19,14 +19,15 @@
             padding-top: 10px;
         }
 
-        footer {
+        #footer {
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            position: absolute;
+            position: relative;
             bottom: 0;
             text-align: center;
-            padding: 0px;
+            padding: 10px;
             color: rgb(0, 0, 0);
+            height: 7.5px;
         }
 
         h1,
@@ -54,6 +55,7 @@
             max-width: 650px;
             margin: auto;
             background-color: white;
+
 
         }
 
@@ -104,6 +106,58 @@
             background-color: rgb(74, 255, 2);
             border-radius: 30%;
         }
+
+        .delete-link {
+            text-decoration: none;
+            font-weight: 900;
+            color: rgb(248, 0, 0);
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        #search-add-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        
+        #add-link {
+            color: rgb(248, 0, 0);
+            text-decoration: none;
+            font-size: 42pt;
+            text-shadow: 1px 1px rgb(29, 9, 2);
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .button {
+            border: 1px solid rgb(14, 8, 5);
+            background-color: #f30c04;
+            color: rgb(24, 6, 6);
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .card-body{
+            padding: 10px;
+
+        }
     </style>
 </head>
 
@@ -115,9 +169,10 @@
         {% endblock content %}
 
     </div>
+    <footer id="footer">&copy; Copyright 2021 TRIKSNAS.COM</footer>
+
 </body>
 
-<footer>&copy; Copyright 2021 TRIKSNAS.COM</footer>
 
 
 

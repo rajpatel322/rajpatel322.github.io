@@ -4,7 +4,7 @@
 <div class="header-bar">
     <div>
         <h1>
-            Hello {{request.user|title}}
+            Hello, {{request.user|title}}
         </h1>
         <h3 style="margin: 0">
             You have <i>{{count}}</i> incomplete task{{ count|pluralize:"s" }}
@@ -13,20 +13,27 @@
     </div>
     {% if request.user.is_authenticated %}
     <br>
-    <a href="{% url 'logout' %}">CLICK to Logout</a>
+    <a href="{% url 'logout' %}">Logout</a>
     {% else %}
     <a href="{% url 'login' %} ">Login</a>
     {% endif %}
 </div>
 
+<div id= "search-add-wrapper">
 
-<!--<hr><h1>My To Do List</h1>
-<a href="{% url 'task-create'%}">Add Task</a>
+    <form method="GET" style="margin-top: 20px;display: flex;">
+        <input type='text' name='search-area' placeholder= " search the list" value="{{search_input}}">
+        <div id="search-button">
+            <input class= "button" type='submit' value=  &#128269;>
+        </div>
+        
+    </form>
+    <a id="add-link" href="{% url 'task-create'%}">&#x2b;</a>
+</div>
 
-<form method="GET">
-    <input type='text' name='search-area' value="{{search_input}}">
-    <input type='submit' value='Search'>
-</form>-->
+
+
+
 
 
 <div class="task-items-wrapper">
