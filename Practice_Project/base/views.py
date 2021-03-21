@@ -15,7 +15,7 @@ from .models import Task
 # Create your views here.
 
 class CustomLoginView(LoginView):
-    template_name = 'base/Login.html'
+    template_name = 'base/login.html'
     fields = '__all__'
     redirect_authenticated_user = True
 
